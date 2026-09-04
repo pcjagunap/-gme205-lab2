@@ -6,6 +6,7 @@ This laboratory project demonstrates object-oriented modeling of spatial data fe
 ---
 
 ## Project Structure
+```text
 gme205-lab2/
 ├── data/
 │   └── points.csv              # Input spatial dataset
@@ -21,7 +22,7 @@ gme205-lab2/
 ├── .gitignore                  # Git tracking rules
 ├── README.md                   # Project documentation and reflections
 └── requirements.txt            # Dependency list (pandas, matplotlib)
-
+```
 
 ### Reflections
 
