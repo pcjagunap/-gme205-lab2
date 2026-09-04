@@ -31,9 +31,9 @@ Modeling spatial features as objects shifts the paradigm from passive table rows
 
 ### 2. Responsibility
 Responsibilities are cleanly separated across three distinct tiers
-* **`Point`**: Single-feature state, coordinate validation, and point-to-point spatial logic like validating bounds and calculating distances via `Point.distance_to()`
-* **`PointSet`**: Aggregate collection management, dataset extents, and structural filtering like, calculating the global bounding box via `PointSet.bbox()`.
-* **Runner Script (`run_lab2.py`)**: File I/O, application orchestration, visualization, and report generation (e.g., saving `output/lab2_preview.png` and `output/lab2_report.json`).
+* `Point`: Single-feature state, coordinate validation, and point-to-point spatial logic like validating bounds and calculating distances via `Point.distance_to()`
+* `PointSet`: Aggregate collection management, dataset extents, and structural filtering like, calculating the global bounding box via `PointSet.bbox()`.
+* **Runner Script (`run_lab2.py`): File I/O, application orchestration, visualization, and report generation (e.g., saving `output/lab2_preview.png` and `output/lab2_report.json`).
 
 ### 3. Modeling Insight
-Separating geometry, domain meaning, and application behavior decouples core computational logic from visual output[cite: 1]. Core classes in `spatial.py` remain pure and reusable, ensuring that changing plot aesthetics or report formats in `run_lab2.py` does not break underlying spatial math or unit tests.
+Separating geometry, domain meaning, and application behavior decouples computational logic from visual output. Classes in `spatial.py` are reusable, ensuring that changing plot aesthetics or report formats in `run_lab2.py` 
